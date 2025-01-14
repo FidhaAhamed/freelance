@@ -76,7 +76,7 @@ const PricingSection = () => {
       <div className="pricing-content">
         <h2 className="pricing-title">Our Packages</h2>
         <p className="pricing-subtitle">
-          Ready to re-vamp your current website or build a new website?
+          Ready to re-vamp your current website or build a new website with us ?
         </p>
         <p className="pricing-contact">
           Email us for more information: <a href="mailto:hello@eseospace.com">hello@eseospace.com</a> Why choose us?
