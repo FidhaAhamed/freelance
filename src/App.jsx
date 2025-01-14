@@ -17,16 +17,12 @@ function App() {
         <Navbar/>
         <Hero/>
         <About/>
-       
         <Services/>
-        <PortfolioGallery/>
-        
+        <PortfolioGallery/>        
         <Work/>
-        <PricingSection/>
-       
+        <PricingSection/>       
         <Footer/>
-      </div>
-      
+      </div>      
     </>
   )
 }
