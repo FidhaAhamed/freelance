@@ -1,0 +1,156 @@
+/* Base styles */
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+  text-align: left;
+  background-color: white;
+  padding-bottom: 0px;
+  margin-top: 0px;
+  margin-bottom: 60px;
+  width: 100%;
+}
+
+.hero-content {
+  max-width: 800px;
+  padding: 300px 20px 0;
+  max-height: fit-content;
+  width: 100%;
+}
+
+.hero-title {
+  font-size: 3.8rem;
+  font-weight: bold;
+  color: #102542;
+  line-height: 1.4;
+  margin-bottom: 0px;
+  margin-top: -100px;
+}
+
+.hero-title span {
+  display: block;
+}
+
+.scroll-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #000;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.scroll-button span {
+  margin-left: 8px;
+  font-size: 1.5rem;
+}
+
+/* Desktop Large (1200px and up) */
+@media (min-width: 1200px) {
+  .hero-content {
+    padding: 300px 20px 0;
+    max-width: 800px;
+  }
+
+  .hero-title {
+    font-size: 3.8rem;
+    margin-top: -100px;
+  }
+}
+
+/* Desktop (992px to 1199px) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .hero-content {
+    padding: 250px 40px 0;
+    max-width: 90%;
+  }
+
+  .hero-title {
+    font-size: 3.4rem;
+    margin-top: -80px;
+  }
+}
+
+/* Tablet Large (768px to 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .hero-content {
+    padding: 200px 40px 0;
+    margin-left: 70px;
+    max-width: 90%;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+    margin-top: -50px;
+  }
+}
+
+/* Tablet Small (576px to 767px) */
+@media (min-width: 576px) and (max-width: 767px) {
+  .hero-content {
+    padding: 150px 30px 0;
+    margin-left: 50px;
+    max-width: 90%;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+    margin-top: -30px;
+  }
+}
+
+/* Mobile Large (481px to 575px) */
+@media (min-width: 481px) and (max-width: 575px) {
+  .hero-content {
+    padding: 120px 20px 0;
+    margin-left: 20px;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+    margin-top: -25px;
+  }
+}
+
+/* Mobile Medium (376px to 480px) */
+@media (min-width: 374px) and (max-width: 480px) {
+  .hero-content {
+    padding: 100px 15px 0;
+    margin-left: 40px;
+    
+  }
+
+  .hero-title {
+    font-size: 1.7rem;
+    margin-right: 40px;
+    margin-top: 10px;
+    ;
+  }
+}
+
+
+
+
+/* Mobile Extra Small (less than 328px) */
+@media (max-width: 327px) {
+  .hero-content {
+    padding: 80px 10px 0;
+    margin-left: -10px;
+    
+    margin-top: 50px;
+  }
+
+  .hero-title {
+    font-size: 1.3rem;
+    margin-right: 20px;
+    margin-left: 30px;
+  }
+
+  
+}

@@ -1,0 +1,185 @@
+*{
+  scroll-behavior: smooth;
+}
+
+
+
+
+
+.navbar {
+  width: 100%;
+  
+  padding: 25px 25px;
+  top: 0;
+  position: fixed;
+  z-index: 997;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  height: 35px;
+}
+
+
+
+nav a {
+  height: 100%;
+  text-decoration: none;
+  display: flex;
+  padding: 0px 16px;
+  align-items: center;
+  color: black;
+  font-family: 'Nunito-Sans', sans-serif;
+  text-transform: uppercase;
+}
+
+nav a.active::after{
+  background-color: rgb(210, 255, 32);
+  color: white;
+}
+
+.menu-btn {
+  display: none;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding:40px;
+  padding-top:30px;
+  height: 100vh;
+  z-index: 999;
+  background-color: rgba(23, 154, 0, 0.945);
+  backdrop-filter: blur(50px);
+  box-shadow: -10px 5px 100vw rgba(0, 0, 0, 0.577);
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap:2em;
+  text-align: right;
+  transition: transform 0.3s ease-in-out;
+}
+
+.sidebar.open {
+  display: flex;
+  transition: all 0.3s ease-in;
+}
+
+.sidebar li {
+  width: 100%;
+  cursor: pointer;
+}
+
+.sidebar li a {
+  width: fit-content;
+  color:white;
+}
+
+.sidebar a:hover, .sidebar a:active {
+  background-color: rgb(255, 144, 17);
+  color:white;
+  border-radius: 500px;
+  transition: all 0.3s ease-in;
+  font-weight:600;
+}
+
+
+
+
+@media (max-width: 768px) {
+  .hideOnMobile {
+    display: none;
+  }
+
+  nav img{
+    scale:1.2;
+  }
+
+  .seprow {
+    display: none;
+  }
+
+ 
+
+  .navbar{
+    margin:0;
+    gap:25%;
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: 769px) {
+  .seprow {
+    background-color: whitesmoke;
+    color:white;
+    display: flex;
+    border-radius: 500px;
+    padding: 10px;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  
+ 
+}
+
+@media (min-width:769px) and (max-width:1039px){
+  .navbar{
+    padding:10px 1px;
+    margin:0;
+    justify-content: center;
+
+ }
+ .navbar *{
+  scale:0.98;
+ }
+ .nav a{
+  padding:0px 16px;
+ }
+
+
+}
+
+@media (min-width:1040px){
+  .navbar{
+    scale:1.1;
+  }
+
+  
+
+  
+}
+
+section .section{
+  height:100vh;
+  scroll-margin-top: 50px;
+}
+
+.navbar a:hover, .navbar a.active {
+  background-color: rgba(92, 123, 244, 1);
+  border-radius: 500px;
+  color: white;
+  transition: all 0.3s ease-in-out;
+  font-weight:600;
+}
+.seprow a.active{
+  background-color: rgba(92, 123, 244, 1);
+  border-radius: 500px;
+  color: white;
+  
+  font-weight:600;
+
+}

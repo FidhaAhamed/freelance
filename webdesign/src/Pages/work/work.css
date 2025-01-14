@@ -1,0 +1,208 @@
+.how-we-work {
+  background-color: #fefeff;
+  padding: 50px;
+  text-align: center;
+  position: relative; /* Add positioning context */
+  clear: both;
+  margin-top: 50px;
+  z-index: 1; /* Ensure proper stacking */
+}
+
+.how-we-work::before {
+  content: '';
+  display: block;
+  clear: both;
+  height: 0;
+}
+
+.how-we-work h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+
+.work-steps {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: left;
+  position: relative; /* Add positioning context */
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0px;
+  position: relative; /* Add positioning context */
+}
+
+.step-number {
+  background-color: #102542;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  width: 70px;
+  height: 40px;
+  border-radius: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.step-number1 {
+  background-color: #102542;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  width: 80px;
+  height: 40px;
+  border-radius: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.step-number3 {
+  background-color: #102542;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  width: 60px;
+  height: 40px;
+  border-radius: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.step-number4 {
+  background-color: #102542;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  width: 100px;
+  height: 40px;
+  border-radius: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.step-content h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0;
+  margin-top: 40px;
+}
+
+.step-content p {
+  font-size: 1.5rem;
+  color: #333;
+  margin-top: 5px;
+}
+
+@media (max-width: 769px) {
+  .how-we-work {
+    padding: 40px 20px;
+    margin-top: 1000px !important; /* Force margin */
+    position: relative;
+    z-index: 1;
+  }
+
+  .work-steps {
+    max-width: 100%;
+    padding: 0 15px;
+    position: relative;
+  }
+
+  .step {
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 20px; /* Add space between steps */
+  }
+
+  .step-number,
+  .step-number1,
+  .step-number3,
+  .step-number4 {
+    width: 60px;
+    height: 40px;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .step-content h2 {
+    font-size: 2rem;
+    margin-top: 20px;
+  }
+
+  .step-content p {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 426px) {
+  .how-we-work {
+    padding: 30px 15px;
+    margin-top: 1000px !important;
+  }
+
+  .step-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .step-content p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 376px) {
+  .step-number,
+  .step-number1,
+  .step-number3,
+  .step-number4 {
+    width: 50px;
+    height: 35px;
+    font-size: 14px;
+  }
+
+  .step-content h2 {
+    font-size: 1.6rem;
+  }
+
+  .step-content p {
+    font-size: 1rem;
+  }
+  .how-we-work {
+    padding: 40px 20px;
+    margin-top: 1000px !important; /* Force margin */
+    position: relative;
+    z-index: 1;
+  }
+}
+
+@media (max-width: 320px) {
+  .step-content h2 {
+    font-size: 1.3rem;
+  }
+  .how-we-work h1{
+    font-size: 1.9rem;
+    margin-bottom: 30px;
+    margin-top: 10px;
+  }
+  .step-content p {
+    font-size: 0.8rem;
+  }
+  .step-number,
+  .step-number1,
+  .step-number3,
+  .step-number4 {
+    width: 30px;
+    height: 30px;
+    font-size: 12px;
+  }
+}
