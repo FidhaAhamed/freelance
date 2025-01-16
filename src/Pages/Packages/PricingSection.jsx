@@ -29,7 +29,7 @@ const PricingSection = () => {
         "Single Page",
         "Shopify Theme",
         "Mobile Responsive",
-        "payment gateway ",
+        "Payment Gateway ",
   
         "1 month revision",
         "Hosting setup"
