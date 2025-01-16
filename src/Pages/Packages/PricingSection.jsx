@@ -30,7 +30,7 @@ const PricingSection = () => {
         "Up to 2 Home Page Mockups Provided",
         "Up to 10 hours revisions on Home Page",
         "Shopify, Wordpress, WIX, Squarespace",
-        "eCommerce Functionality",
+        "eCommerce - Functionality",
         "Lead Generation Functionality",
         "3 months Complimentary Warranty",
         "3 months Complimentary Hosting"
