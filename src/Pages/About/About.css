@@ -95,7 +95,8 @@
 
 @media (max-width: 768px) {
   .abtsection {
-    padding: 40px 15px;
+    padding: 30px 15px;
+    
   }
 
   .about-heading {
@@ -104,7 +105,7 @@
   }
 
   .about-description {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 }
 
@@ -120,5 +121,24 @@
 
   .about-description {
     font-size: 1.1rem;
+  }
+}
+@media (max-width: 380px) {
+  .abtsection {
+    padding: 30px 10px;
+   
+   
+  }
+
+  .about-heading {
+    font-size: 2rem;
+    margin-bottom: 50px;
+  }
+
+  .about-description {
+    font-size: 1rem;
+    margin-bottom: 90px;
+    
+
   }
 }
