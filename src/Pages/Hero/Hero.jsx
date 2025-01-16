@@ -7,8 +7,7 @@ function Hero() {
     <section className='hero-container section' id='home'>
       <div className='hero-content'>
         <h1 className='hero-title'>
-          <span className='left'>From Strategy to Success:</span>
-          <span className='right'>E-Commerce Solutions for Every Stage of Your Growth</span>
+          <span className='left'>Partner in Driving Your Online Success</span>
         </h1>
        
       </div>
