@@ -25,7 +25,6 @@ function Services() {
     <section id="service"className="services-section section">
       <div className="services-container">
         <h2 className="services-heading">What we do</h2>
-        <hr className="services-divider" />
         <div className="services-grid">
           <div className="services-column">
             {servicesList.slice(0, 8).map((service) => (
