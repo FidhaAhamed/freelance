@@ -26,13 +26,13 @@ const PricingSection = () => {
       description: "If you don't want to grow your traffic, but want a website, or to get more conversions from your current traffic – this is for you!",
       buttonText: "See Pricing",
       features: [
-        "single page",
-        "Shopify theme",
-        "mobile responsive",
+        "Single Page",
+        "Shopify Theme",
+        "Mobile Responsive",
         "payment gateway ",
-        "mobile responsive",
+  
         "1 month revision",
-        "hosting setup"
+        "Hosting setup"
       ]
     },
     {
@@ -45,11 +45,11 @@ const PricingSection = () => {
         "Basic social integration",
         "2 plugin",
         "Basic SEO optimization ",
-        "mobile responsive",
+        "Mobile responsive",
         "Contact Form Integration ",
-        
+        "All device responsive",
         "Speed Optimization",
-        "hosting setup"
+        "Hosting setup"
       ]
     },
     {
