@@ -1,7 +1,7 @@
 import { useState } from "react";
-import project1Image from "../../components/fusion.jpeg";
+import project1Image from "../../assets/Images/fusion.jpeg";
 import project2Image from "../../components/image.jpeg";
-import project3Image from "../../components/sparc.jpeg";
+import project3Image from "../../assets/Images/sparc.jpeg";
 import project4Image from "../../components/kc.jpeg";
 import "./PortfolioGallery.css";
 
