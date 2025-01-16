@@ -1,7 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react';
 import './Navbar.css';
 
-
 function Navbar() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const sidebarRef = useRef(null);
@@ -13,7 +12,7 @@ function Navbar() {
       const sections = document.querySelectorAll('.section');
       let currentTab = '';
 
-      sections.forEach(section => {
+      sections.forEach((section) => {
         const sectionTop = section.offsetTop;
         const sectionHeight = section.clientHeight;
         const scrollPosition = window.scrollY + window.innerHeight / 2;
@@ -27,7 +26,7 @@ function Navbar() {
     };
 
     window.addEventListener('scroll', handleScroll);
-    handleScroll(); // Call initially to set the active tab on page load
+    handleScroll();
 
     return () => {
       window.removeEventListener('scroll', handleScroll);
@@ -37,8 +36,8 @@ function Navbar() {
   const handleTabClick = (tabId) => {
     document.getElementById(tabId).scrollIntoView({ behavior: 'smooth' });
     setActiveTab(tabId);
+    setSidebarOpen(false);
   };
-
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -49,36 +48,26 @@ function Navbar() {
     document.addEventListener('mousedown', handleClickOutside);
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
-  
-  const handleLinkClick = (sectionId) => {
-    setSidebarOpen(false);
-  };
-
-  const [scrolled, setScrolled] = useState(false);
-
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 50);
-    window.addEventListener('scroll', onScroll);
-    return () => window.removeEventListener('scroll', onScroll);
-  }, []);
 
   const navbarStyle = {
-    backgroundColor: scrolled ? 'transparent' : 'transparent',
+    backgroundColor: 'transparent',
     transition: 'background-color 0.3s ease',
     position: 'fixed',
     top: 0,
-    width: '100%'
+    width: '100%',
   };
 
   return (
     <nav>
-     
-      
-      
-      <ul className='navbar' style={navbarStyle}>
-       
-        <div className="seprow">
-        <ul>
+      <div className="navbar" style={navbarStyle}>
+        <button
+          className="menu-btn"
+          onClick={() => setSidebarOpen(!sidebarOpen)}
+          aria-label="Toggle menu"
+        >
+          {sidebarOpen ? '✖' : '☰'}
+        </button>
+        <ul className="seprow">
           <li>
             <a
               href="#home"
@@ -97,14 +86,13 @@ function Navbar() {
               About
             </a>
           </li>
-          
           <li>
             <a
               href="#service"
               className={activeTab === 'service' ? 'active' : ''}
               onClick={() => handleTabClick('service')}
             >
-             SERVICE
+              Service
             </a>
           </li>
           <li>
@@ -113,7 +101,7 @@ function Navbar() {
               className={activeTab === 'design' ? 'active' : ''}
               onClick={() => handleTabClick('design')}
             >
-             DESIGN
+              Design
             </a>
           </li>
           <li>
@@ -131,7 +119,7 @@ function Navbar() {
               className={activeTab === 'pricing' ? 'active' : ''}
               onClick={() => handleTabClick('pricing')}
             >
-            PRICING
+              Pricing
             </a>
           </li>
           <li>
@@ -140,17 +128,26 @@ function Navbar() {
               className={activeTab === 'contact' ? 'active' : ''}
               onClick={() => handleTabClick('contact')}
             >
-             CONTACT
+              Contact
             </a>
           </li>
-         
-          
         </ul>
-        </div>
-        
-        
-        
-      </ul>
+      </div>
+
+      <div
+        ref={sidebarRef}
+        className={`sidebar ${sidebarOpen ? 'open' : ''}`}
+      >
+        <ul>
+          <li onClick={() => handleTabClick('home')}>Home</li>
+          <li onClick={() => handleTabClick('about')}>About</li>
+          <li onClick={() => handleTabClick('service')}>Service</li>
+          <li onClick={() => handleTabClick('design')}>Design</li>
+          <li onClick={() => handleTabClick('workflow')}>Workflow</li>
+          <li onClick={() => handleTabClick('pricing')}>Pricing</li>
+          <li onClick={() => handleTabClick('contact')}>Contact</li>
+        </ul>
+      </div>
     </nav>
   );
 }

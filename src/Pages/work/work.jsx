@@ -8,7 +8,7 @@ const Work = () => {
       <h1>How we work</h1>
       <div className="work-steps">
         <div className="step">
-          <div className="step-number1">1</div>
+          <div className="step-number">1</div>
           <div className="step-content">
             <h2>Design Phase</h2>
             <p>
@@ -28,7 +28,7 @@ const Work = () => {
         </div>
 
         <div className="step">
-          <div className="step-number3">3</div>
+          <div className="step-number">3</div>
           <div className="step-content">
             <h2>Hosting Phase</h2>
             <p>
@@ -38,7 +38,7 @@ const Work = () => {
         </div>
 
         <div className="step">
-          <div className="step-number4">4</div>
+          <div className="step-number">4</div>
           <div className="step-content">
             <h2>Maintenance & Support Phase</h2>
             <p>

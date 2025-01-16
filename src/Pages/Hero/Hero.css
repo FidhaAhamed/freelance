@@ -4,29 +4,43 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: fit-content;
-  text-align: left;
-  background-color: white;
-  padding-bottom: 0px;
-  margin-top: 0px;
-  margin-bottom: 60px;
+  height: 100vh;
+  text-align: center;
+  position: relative;
+  background-image: url("../../assets/Images/freepik__the-style-is-candid-image-photography-with-natural__1578.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  overflow: hidden;
+}
+
+.hero-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(16, 37, 66, 0.9), rgba(0, 0, 0, 0.6));
+  z-index: 1;
 }
 
 .hero-content {
+  position: relative;
+  z-index: 2;
   max-width: 800px;
-  padding: 300px 20px 0;
-  max-height: fit-content;
-  width: 100%;
+  padding: 0 20px;
+  animation: fadeIn 1.5s ease-in-out;
 }
 
 .hero-title {
-  font-size: 3.8rem;
+  font-size: 3.5rem;
   font-weight: bold;
-  color: #102542;
-  line-height: 1.4;
-  margin-bottom: 0px;
-  margin-top: -100px;
+  line-height: 1.2;
+  margin: 0;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  letter-spacing: 1px;
 }
 
 .hero-title span {
@@ -34,123 +48,68 @@
 }
 
 .scroll-button {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 20px;
-  font-size: 1rem;
-  font-weight: 500;
-  color: #000;
-  background: none;
-  border: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 10px 20px;
+  border: 1px solid #fff;
+  border-radius: 50px;
   cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+}
+
+.scroll-button:hover {
+  background: #fff;
+  color: #102542;
 }
 
 .scroll-button span {
   margin-left: 8px;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
+  transition: transform 0.3s ease;
 }
 
-/* Desktop Large (1200px and up) */
+.scroll-button:hover span {
+  transform: translateY(5px);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Styles */
+
+/* Desktop Large */
 @media (min-width: 1200px) {
-  .hero-content {
-    padding: 300px 20px 0;
-    max-width: 800px;
-  }
-
   .hero-title {
-    font-size: 3.8rem;
-    margin-top: -100px;
+    font-size: 4rem;
   }
 }
 
-/* Desktop (992px to 1199px) */
-@media (min-width: 992px) and (max-width: 1199px) {
-  .hero-content {
-    padding: 250px 40px 0;
-    max-width: 90%;
-  }
-
+/* Tablet */
+@media (max-width: 991px) {
   .hero-title {
-    font-size: 3.4rem;
-    margin-top: -80px;
+    font-size: 2.8rem;
   }
 }
 
-/* Tablet Large (768px to 991px) */
-@media (min-width: 768px) and (max-width: 991px) {
-  .hero-content {
-    padding: 200px 40px 0;
-    margin-left: 70px;
-    max-width: 90%;
-  }
-
-  .hero-title {
-    font-size: 2.5rem;
-    margin-top: -50px;
-  }
-}
-
-/* Tablet Small (576px to 767px) */
-@media (min-width: 576px) and (max-width: 767px) {
-  .hero-content {
-    padding: 150px 30px 0;
-    margin-left: 50px;
-    max-width: 90%;
-  }
-
-  .hero-title {
-    font-size: 2.5rem;
-    margin-top: -30px;
-  }
-}
-
-/* Mobile Large (481px to 575px) */
-@media (min-width: 481px) and (max-width: 575px) {
-  .hero-content {
-    padding: 120px 20px 0;
-    margin-left: 20px;
-  }
-
+/* Mobile */
+@media (max-width: 575px) {
   .hero-title {
     font-size: 2rem;
-    margin-top: -25px;
   }
-}
-
-/* Mobile Medium (376px to 480px) */
-@media (min-width: 374px) and (max-width: 480px) {
-  .hero-content {
-    padding: 100px 15px 0;
-    margin-left: 40px;
-    
-  }
-
-  .hero-title {
-    font-size: 1.7rem;
-    margin-right: 40px;
-    margin-top: 10px;
-    ;
-  }
-}
-
-
-
-
-/* Mobile Extra Small (less than 328px) */
-@media (max-width: 327px) {
-  .hero-content {
-    padding: 80px 10px 0;
-    margin-left: -10px;
-    
-    margin-top: 50px;
-  }
-
-  .hero-title {
-    font-size: 1.3rem;
-    margin-right: 20px;
-    margin-left: 30px;
-  }
-
-  
 }

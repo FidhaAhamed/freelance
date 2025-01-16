@@ -4,8 +4,8 @@
     margin: 0 auto;
   }
 .mainsection{
-  background: linear-gradient(to bottom, #1a1a2e, #16213e);
-  background-image: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+  background: linear-gradient(135deg, #1c1f4a 30%,#0f122b 100% );
+  color: #ffffff;
   padding: 50px;
   padding-bottom: 90px;
 }
@@ -17,14 +17,16 @@
     width: 100%;
   }
   .design{
-    color: #102542;
-  font-size: 3.5rem;
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 1rem;
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 1rem;
+    position: relative;
   }
+
   .design-subtitle {
-    color: #102542;
+    color: #ffffff;
     text-align: center;
     font-size: 1.2rem;
     margin-bottom:70px;

@@ -1,15 +1,8 @@
 import React from 'react';
-import { IoIosArrowDown } from "react-icons/io";
 import './Hero.css';
 
 function Hero() {
-  const handleScrollToAboutSection = () => {
-    const aboutSection = document.getElementById('about');
-    if (aboutSection) {
-      aboutSection.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
+ 
   return (
     <section className='hero-container section' id='home'>
       <div className='hero-content'>
