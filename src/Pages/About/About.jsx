@@ -12,8 +12,7 @@ function About() {
           team of skilled developers focuses on delivering seamless, scalable,
           and user-friendly digital experiences tailored to your business needs.
           We don’t just build websites—we create smart, efficient solutions
-          that drive growth and streamline operations. From concept to launch
-          and beyond, we’re here to help you succeed in the digital landscape.
+          that drive growth and streamline operations. 
           If you’re a brand or retailer seeking specialized expertise, partner
           with a team that truly knows how to deliver.
         </p>
