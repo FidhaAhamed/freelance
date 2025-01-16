@@ -1,7 +1,8 @@
 import { useState } from "react";
-import project1Image from "../../components/project1.png";
+import project1Image from "../../components/fusion.jpeg";
 import project2Image from "../../components/image.jpeg";
-import project3Image from "../../components/image1.png";
+import project3Image from "../../components/sparc.jpeg";
+import project4Image from "../../components/kc.jpeg";
 import "./PortfolioGallery.css";
 
 const PortfolioGallery = () => {
@@ -32,24 +33,12 @@ const PortfolioGallery = () => {
     {
       id: 3,
       title: "Therapy Management System",
-      preview: project3Image,
-      fullImage: project3Image,
+      preview: project4Image,
+      fullImage: project4Image,
       type: "app",
     },
-    {
-      id: 2,
-      title: "Healthcare Platform",
-      preview: project2Image,
-      fullImage: project2Image,
-      type: "software",
-    },
-    {
-      id: 1,
-      title: "Website Design + Development",
-      preview: project1Image,
-      fullImage: project1Image,
-      type: "website",
-    },
+
+  
   ];
 
   const handleNext = (e) => {

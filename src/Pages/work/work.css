@@ -5,7 +5,7 @@
   text-align: center;
   position: relative; /* Add positioning context */
   clear: both;
-  margin-top: 50px;
+  margin-top: 0px;
   z-index: 1; /* Ensure proper stacking */
 }
 
@@ -92,7 +92,7 @@
 @media (max-width: 769px) {
   .how-we-work {
     padding: 40px 20px;
-    margin-top: 1000px !important; /* Force margin */
+    margin-top: 0px !important; /* Force margin */
     position: relative;
     z-index: 1;
   }
@@ -133,7 +133,7 @@
 @media (max-width: 426px) {
   .how-we-work {
     padding: 30px 15px;
-    margin-top: 1000px !important;
+    margin-top: 0px !important;
   }
 
   .step-content h2 {
@@ -162,7 +162,7 @@
   }
   .how-we-work {
     padding: 40px 20px;
-    margin-top: 1000px !important; /* Force margin */
+    margin-top: 0px !important; /* Force margin */
     position: relative;
     z-index: 1;
   }
