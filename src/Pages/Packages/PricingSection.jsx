@@ -79,7 +79,7 @@ const PricingSection = () => {
           Ready to re-vamp your current website or build a new website with us ?
         </p>
         <p className="pricing-contact">
-          Email us for more information: <a href="mailto:hello@eseospace.com">hello@eseospace.com</a> Why choose us?
+          Email us for more information: <a href="mailto:joannjkoodathil@gmail.com">joannjkoodathil@gmail.com</a> Why choose us?
         </p>
         
         

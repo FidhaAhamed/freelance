@@ -8,10 +8,10 @@ function AppFooter() {
     <div className="footer">
       <div className="footer-text">
         <h2>Sounds great, right?</h2>
-        <h3>Work with us</h3>
+        {/*<h3>Work with us</h3>*/}
       </div>
 
-      {/* WhatsApp Contact */}
+      {/* WhatsApp Contact
       <div className="footer-contact">
         <a
           href="https://wa.me/+918078531945"
@@ -29,14 +29,14 @@ function AppFooter() {
         >
           <FaWhatsapp className="icon" /> +91 8891236906
         </a>
-      </div>
+      </div> */}
 
       {/* Connect with us */}
       <div className="footer-connect">
         <h4>Connect with us</h4>
         <div className="social-icons">
           <a
-            href="https://www.linkedin.com/in/yourprofile"
+            href="https://www.linkedin.com/in/fidha-ahamed/"
             target="_blank"
             rel="noopener noreferrer"
             className="social-link"
@@ -50,7 +50,7 @@ function AppFooter() {
             <FaEnvelope className="icon" />
           </a>
           <a
-            href="https://www.instagram.com/web.lance_/?utm_source=qr&r=nametag"
+            href="https://www.instagram.com/web.design_24?igsh=MXE4cWx4ZmZsN3Ywcg%3D%3D"
             target="_blank"
             rel="noopener noreferrer"
             className="social-link"
@@ -59,6 +59,12 @@ function AppFooter() {
           </a>
         </div>
       </div>
+       {/* Copyright Section */}
+       <div className="footer-copyright">
+          <p>
+            © {new Date().getFullYear()} Design and developed by <a href="https://github.com/FidhaAhamed">Fidha Ahamed</a> and <a href="https://github.com/Joann-jk">Joann J Koodathil</a>. All rights reserved.
+          </p>
+        </div>
     </div> </section>
   );
 }
