@@ -62,7 +62,9 @@ function AppFooter() {
        {/* Copyright Section */}
        <div className="footer-copyright">
           <p>
-            © {new Date().getFullYear()} Design and developed by <a href="https://github.com/FidhaAhamed">Fidha Ahamed</a> and <a href="https://github.com/Joann-jk">Joann J Koodathil</a>. All rights reserved.
+            © {new Date().getFullYear()} Design and developed by 
+            <a href="https://github.com/FidhaAhamed" target="_blank" rel="noopener noreferrer">Fidha Ahamed</a> and 
+            <a href="https://github.com/Joann-jk" target="_blank" rel="noopener noreferrer">Joann J Koodathil</a>. All rights reserved.
           </p>
         </div>
     </div> </section>
