@@ -3,22 +3,25 @@ import "./Services.css";
 
 function Services() {
   const servicesList = [
-    { id: 1, text: "Custom Development" },
-    { id: 2, text: "User Experience Optimization" },
-    { id: 3, text: "Security Audits & Remediation" },
-    { id: 4, text: "Site Speed Audits & Optimization" },
-    { id: 5, text: "Custom Theme Development" },
-    { id: 6, text: "24x7x365 Critical Site Support" },
-    { id: 7, text: "Integrations" },
-    { id: 8, text: "Automation" },
-    { id: 9, text: "Conversion Rate Optimization" },
-    { id: 10, text: "Replatforming / Full Platform Migrations" },
-    { id: 11, text: "Synthetic Browser Testing" },
-    { id: 12, text: "Technology Evaluations" },
-    { id: 13, text: "Solutions Consulting" },
-    { id: 14, text: "Accessibility / ADA" },
-    { id: 15, text: "Headless / PWA" },
-    { id: 16, text: "Complex Projects" }
+  
+      { "id": 1, "text": "Custom E-commerce Websites" },
+      { "id": 2, "text": "Static Business Websites" },
+      { "id": 3, "text": "Mobile-Responsive Designs" },
+      { "id": 4, "text": "Product Upload & Setup" },
+      { "id": 5, "text": "Premium Themes & Customization" },
+      { "id": 6, "text": "SEO Optimization" },
+      { "id": 7, "text": "Plugins & Extensions" },
+      { "id": 8, "text": "Speed Optimization" },
+      { "id": 9, "text": "Hosting & Domain Assistance" },
+      { "id": 10, "text": "Social Media Integration" },
+      { "id": 11, "text": "Email Marketing Tools" },
+      { "id": 12, "text": "Contact Form & Lead Capture" },
+      { "id": 13, "text": "Security & Performance Enhancements" },
+      { "id": 14, "text": "Unlimited Revisions" },
+      { "id": 15, "text": "Ongoing Support & Maintenance" },
+      { "id": 16, "text": "Scalable Solutions" }
+  
+  
   ];
 
   return (

@@ -26,14 +26,13 @@ const PricingSection = () => {
       description: "If you don't want to grow your traffic, but want a website, or to get more conversions from your current traffic – this is for you!",
       buttonText: "See Pricing",
       features: [
-        "Custom Design of All Pages",
-        "Up to 2 Home Page Mockups Provided",
-        "Up to 10 hours revisions on Home Page",
-        "Shopify, Wordpress, WIX, Squarespace",
-        "eCommerce - Functionality",
-        "Lead Generation Functionality",
-        "3 months Complimentary Warranty",
-        "3 months Complimentary Hosting"
+        "single page",
+        "Shopify theme",
+        "mobile responsive",
+        "payment gateway ",
+        "mobile responsive",
+        "1 month revision",
+        "hosting setup"
       ]
     },
     {
@@ -42,28 +41,28 @@ const PricingSection = () => {
       buttonText: "See Pricing",
       isPopular: true,
       features: [
-        "Title Tags + Meta Tags + Alt Tags + Schemas",
-        "10 Targeted Keywords per Website",
-        "SEO Keyword-Targeting Page Outlines",
-        "Up to 500 Words / SEO Copywriting",
-        "Google Analytics",
-        "Search Console Setup",
-        "Internal SEO Audit, and Site Speed Audit",
-        "1 FAQ Page for Organic Keyword Targeting",
-        "SEO Preservation if needed"
+        "3 pages",
+        "Basic social integration",
+        "2 plugin",
+        "Basic SEO optimization ",
+        "mobile responsive",
+        "Contact Form Integration ",
+        
+        "Speed Optimization",
+        "hosting setup"
       ]
     },
     {
       title: "Build Your Own Package",
-      description: "We build CRMs, Marketing Automation tools, databases, drip campaigns, and more. Businesses choose us because we care!",
+      description: "We create high-performance websites, e-commerce stores, and automation tools with custom designs, advanced SEO, and seamless integrations and more. Businesses choose us because we care!",
       buttonText: "Get a Custom Quote",
       features: [
-        "+ Custom Plugins",
-        "+ Marketing Automation",
-        "+ CRM Integrations",
-        "+ Backend Databases",
-        "+ Custom Workflows",
-        "+ Client Portals",
+        "+ Unlimited Pages",
+        "+ Customized Theme",
+        "+ Advanced Social Media Integration",
+        "+ Hosting Setup",
+        "+ Customized Plugins",
+        "+ Advanced SEO Optimization",
         "+ Animation and Effects",
         "+ Let us build your dream site!"
       ]
