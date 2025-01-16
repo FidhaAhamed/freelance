@@ -8,7 +8,7 @@ function Services() {
       { "id": 2, "text": "Static Business Websites" },
       { "id": 3, "text": "Mobile-Responsive Designs" },
       { "id": 4, "text": "Product Upload & Setup" },
-      { "id": 5, "text": "Premium Themes & Customization" },
+      { "id": 5, "text": "Premium Themes " },
       { "id": 6, "text": "SEO Optimization" },
       { "id": 7, "text": "Plugins & Extensions" },
       { "id": 8, "text": "Speed Optimization" },
@@ -16,9 +16,9 @@ function Services() {
       { "id": 10, "text": "Social Media Integration" },
       { "id": 11, "text": "Email Marketing Tools" },
       { "id": 12, "text": "Contact Form & Lead Capture" },
-      { "id": 13, "text": "Security & Performance Enhancements" },
+      { "id": 13, "text": "Performance Enhancements" },
       { "id": 14, "text": "Unlimited Revisions" },
-      { "id": 15, "text": "Ongoing Support & Maintenance" },
+      { "id": 15, "text": "Ongoing Maintenance" },
       { "id": 16, "text": "Scalable Solutions" }
   
   
